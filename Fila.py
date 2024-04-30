@@ -6,10 +6,10 @@ while True:
     print(f"Fila atual: {fila}")
     print("Digite F pra adicionarum cliente ao fim da fila.")
     print("ou A para realizaro atendimento, S para sair.")
-    operecao = input("Operação (F, A ou S):")
+    operacao = input("Operação (F, A ou S):")
 
     if operacao == "A":
-        if len(fila > 0):
+        if len(fila) > 0:
             atendido = fila.pop(0)
             print(f"cliente {atendido} Atendido")
         else :
